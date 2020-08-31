@@ -50,6 +50,7 @@ public class SelectorDemo {
             //调用会阻塞，直到至少有一个时间发生
             try {
                 Selector selector = getSelector();
+
                 selector.select();
 
                 Set<SelectionKey> keys = selector.selectedKeys();

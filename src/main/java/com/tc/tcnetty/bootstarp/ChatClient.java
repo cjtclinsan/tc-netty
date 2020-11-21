@@ -7,7 +7,6 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
@@ -42,6 +41,6 @@ public class ChatClient {
     }
 
     public static void main(String[] args) {
-        new ChatClient().connect(8077, "127.0.0.1", "tcc");
+        new ChatClient().connect(8080, "127.0.0.1", "tcc");
     }
 }
